@@ -49,6 +49,7 @@ export class UserComponent{
 //  @Input({required: true}) id!: string
 // instead of creating 3 @input we can create an object
  @Input({required:true}) user!: User
+ @Input({required: true}) isSelected!: boolean
  @Output() select = new EventEmitter<string>() // output is used to emit the value from current compnent
 
 ///-----------using input signals-------------------
