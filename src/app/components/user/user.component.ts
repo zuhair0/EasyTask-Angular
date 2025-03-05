@@ -1,5 +1,6 @@
 import { Component, computed, EventEmitter, input, Input, output, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { User } from './user.model';
 // we can create User type
 // type User = {
 //   id: string,
@@ -8,11 +9,11 @@ import { CommonModule } from '@angular/common';
 // }
 
 //we can also interface for User
-interface User {
-  id: string,
-  avatar: string,
-  name: string
-}
+// interface User {
+//   id: string,
+//   avatar: string,
+//   name: string
+// }
 @Component({
   selector: 'app-user',
   imports: [CommonModule],
