@@ -46,4 +46,7 @@ export class TasksComponent {
   onStartAddTask(){
     this.isAddingNewTask = true
   }
+  cancellingNewTaskCreation(){
+    this.isAddingNewTask = false
+  }
 }
