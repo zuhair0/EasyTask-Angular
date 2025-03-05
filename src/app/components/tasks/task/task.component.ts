@@ -20,7 +20,7 @@ export class TaskComponent {
 // @Input() userId!: string;
 // @Input() title!: string;
 // @Input() summary!: string;
-// @Input() dueDate!: string;
+// @Input() dueDate!: string;;
 @Input({required:true}) tasksdata!: taskObject
 @Output() complete = new EventEmitter<string>();
 taskCompleted(){
