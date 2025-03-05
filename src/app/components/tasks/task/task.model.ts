@@ -5,3 +5,10 @@ export interface taskObject {
   summary: string;
   dueDate: string;
 }
+
+export interface newTaskModel {
+    title: string;
+    summary: string;
+    dueDate: string;
+  }
+  
