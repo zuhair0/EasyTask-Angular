@@ -1,5 +1,8 @@
 @if(isAddingNewTask){
-    <app-new-task (cancelDialog)="cancellingNewTaskCreation()" (addTask)="onAddTask($event)"/>
+<app-new-task
+  (cancelDialog)="cancellingNewTaskCreation()"
+  (addTask)="onAddTask($event)"
+/>
 }
 
 <section id="tasks">
@@ -12,7 +15,7 @@
   <ul>
     @for(task of selectedUserTasks; track task.id){
     <li>
-        <app-task [tasksdata]="task" (complete)="ontaskComplete($event)"/>
+      <app-task [tasksdata]="task" (complete)="ontaskComplete($event)" />
     </li>
     }
   </ul>
