@@ -1,5 +1,11 @@
 import { Component,Input } from '@angular/core';
-
+interface taskObject  {
+id :string;
+userId: string;
+title: string;
+summary: string;
+dueDate: string;
+}
 @Component({
   selector: 'app-task',
   imports: [],
@@ -7,10 +13,11 @@ import { Component,Input } from '@angular/core';
   styleUrl: './task.component.css'
 })
 export class TaskComponent {
-@Input() taskId!: string;
-@Input() userId!: string;
-@Input() title!: string;
-@Input() summary!: string;
-@Input() dueDate!: string;
+// @Input() taskId!: string;
+// @Input() userId!: string;
+// @Input() title!: string;
+// @Input() summary!: string;
+// @Input() dueDate!: string;
+@Input({required:true}) tasksdata!: taskObject
 
 }
