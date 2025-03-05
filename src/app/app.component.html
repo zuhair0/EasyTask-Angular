@@ -29,8 +29,8 @@
   </ul>
 
   <!-- below is conditional rendering -->
-@if (selectedUserID){ 
-  <app-tasks [name]="selectedUserID.name"></app-tasks>
+@if (selectedUser){ 
+  <app-tasks [userId]="selectedUser.id" [name]="selectedUser.name"></app-tasks>
 }@else {
   <h2>Select any user to see its tasks!</h2>
 }

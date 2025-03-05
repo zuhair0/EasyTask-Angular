@@ -15,7 +15,7 @@ export class AppComponent {
   users = DUMMY_USERS;
   userID!:String;
 
-  get selectedUserID(){
+  get selectedUser(){
     return this.users.find((user)=>user.id===this.userID)!
   }
   onSelectUser(id:String){
