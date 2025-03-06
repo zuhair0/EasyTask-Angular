@@ -47,9 +47,11 @@ export class TasksComponent {
   get selectedUserTasks(){
     return this.taskservice.getUserTask(this.userId);
   }
-  ontaskComplete(taskId: string){
-    this.taskservice.removeTask(taskId)
-  }
+
+  // we dont need below method as we are doing it in task.component.ts by service
+  // ontaskComplete(taskId: string){
+  //   // this.taskservice.removeTask(taskId)
+  // }
   onStartAddTask(){
     this.isAddingNewTask = true
   }
