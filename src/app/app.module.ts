@@ -18,6 +18,6 @@ import { TasksModule } from './components/tasks/tasks.module';
     UserComponent,
   ], // in declaration we only put components that are NOT standalone
   bootstrap: [AppComponent], // bootstrap tells the angular about the first/root component or entry point
-  imports: [BrowserModule, SharedModule, TasksModule], // imports can be used for the standalone and non-standalone components
+  imports: [BrowserModule, SharedModule, TasksModule], // imports can be used for the standalone and non-standalone components.
 })
 export class AppModule {}
