@@ -1,6 +1,6 @@
 
 <app-card>
-    <!-- class bingin in anguklar is done by [class.classname] -->
+    <!-- dynamic class binding in angular is done by [class.classname] -->
     <button [class.active]="isSelected" (click)="onSeletedUser()">
         <img [src]='imagePath' [alt]="user.name"/>
         <span>{{ user.name }}</span>
