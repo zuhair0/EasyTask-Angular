@@ -56,15 +56,17 @@ export class TasksComponent {
   cancellingNewTaskCreation(){
     this.isAddingNewTask = false
   }
-  onAddTask(newTask: newTaskModel){
-    // this.tasks.unshift({
-    //   id: new Date().getHours().toString(),
-    //   userId: this.userId,
-    //   title: newTask.title,
-    //   summary: newTask.summary,
-    //   dueDate: newTask.dueDate
-    // })
-    this.taskservice.addTask(newTask, this.userId)
-    this.isAddingNewTask=false
-  }
+
+  // we dont need this method as we are using the service now
+  // onAddTask(newTask: newTaskModel){
+  //   // this.tasks.unshift({
+  //   //   id: new Date().getHours().toString(),
+  //   //   userId: this.userId,
+  //   //   title: newTask.title,
+  //   //   summary: newTask.summary,
+  //   //   dueDate: newTask.dueDate
+  //   // })
+  //   this.taskservice.addTask(newTask, this.userId)
+  //   this.isAddingNewTask=false
+  // }
 }
